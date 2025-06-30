@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameZone.GuessNumber", "Gam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameZone.ConsoleApp", "GameZone.ConsoleApp\GameZone.ConsoleApp.csproj", "{79D25006-FC79-44AB-9DE9-CCD41B913EC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameZone.MemoryGame", "GameZone.MemoryGame\GameZone.MemoryGame.csproj", "{81B4E455-BBAD-499F-999E-2CE47D1D3D60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{79D25006-FC79-44AB-9DE9-CCD41B913EC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79D25006-FC79-44AB-9DE9-CCD41B913EC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79D25006-FC79-44AB-9DE9-CCD41B913EC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81B4E455-BBAD-499F-999E-2CE47D1D3D60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81B4E455-BBAD-499F-999E-2CE47D1D3D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81B4E455-BBAD-499F-999E-2CE47D1D3D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81B4E455-BBAD-499F-999E-2CE47D1D3D60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

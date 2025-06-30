@@ -1,4 +1,5 @@
 ﻿using GameZone.GuessNumber;
+using GameZone.MemoryGame;
 
 while (true)
 {
@@ -6,7 +7,7 @@ while (true)
     Console.WriteLine("🎮 Welcome to Game Zone 🎮");
     Console.WriteLine("Select a game:");
     Console.WriteLine("1. Guess the Number");
-    Console.WriteLine("2. Memory Game (Coming Soon)");
+    Console.WriteLine("2. Memory Game");
     Console.WriteLine("3. Dice Roll (Coming Soon)");
     Console.WriteLine("0. Exit");
 
@@ -20,8 +21,7 @@ while (true)
             break;
 
         case "2":
-            Console.WriteLine("🧠 Memory Game is under development...");
-            Pause();
+            PlayMemoryGame();
             break;
 
         case "3":
@@ -52,14 +52,33 @@ void PlayGuessNumberGame()
     var diffChoice = Console.ReadLine();
     var difficulty = diffChoice switch
     {
-        "1" => Difficulty.Easy,
-        "2" => Difficulty.Medium,
-        "3" => Difficulty.Hard,
-        _ => Difficulty.Easy
+        "1" => GameZone.GuessNumber.Difficulty.Easy,
+        "2" => GameZone.GuessNumber.Difficulty.Medium,
+        "3" => GameZone.GuessNumber.Difficulty.Hard,
+        _ => GameZone.GuessNumber.Difficulty.Easy
     };
 
     var game = new GuessTheNumberGame(difficulty);
     game.Start();
+
+    Pause();
+}
+
+void PlayMemoryGame()
+{
+    Console.WriteLine("Select difficulty: 1. Easy 2. Medium 3. Hard");
+    var memDiff = Console.ReadLine();
+
+    var memDifficulty = memDiff switch
+    {
+        "1" => GameZone.MemoryGame.Difficulty.Easy,
+        "2" => GameZone.MemoryGame.Difficulty.Medium,
+        "3" => GameZone.MemoryGame.Difficulty.Hard,
+        _ => GameZone.MemoryGame.Difficulty.Easy
+    };
+
+    var memoryGame = new MemoryGame(memDifficulty);
+    memoryGame.Start();
 
     Pause();
 }

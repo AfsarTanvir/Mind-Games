@@ -1,4 +1,4 @@
-﻿namespace GameZone.MemoryGame;
+﻿namespace GameZone.Core;
 
 public enum Difficulty
 {

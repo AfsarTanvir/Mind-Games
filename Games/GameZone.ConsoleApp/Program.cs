@@ -1,4 +1,5 @@
-﻿using GameZone.GuessNumber;
+﻿using GameZone.Core;
+using GameZone.GuessNumber;
 using GameZone.MemoryGame;
 
 while (true)
@@ -52,10 +53,10 @@ void PlayGuessNumberGame()
     var diffChoice = Console.ReadLine();
     var difficulty = diffChoice switch
     {
-        "1" => GameZone.GuessNumber.Difficulty.Easy,
-        "2" => GameZone.GuessNumber.Difficulty.Medium,
-        "3" => GameZone.GuessNumber.Difficulty.Hard,
-        _ => GameZone.GuessNumber.Difficulty.Easy
+        "1" => Difficulty.Easy,
+        "2" => Difficulty.Medium,
+        "3" => Difficulty.Hard,
+        _ => Difficulty.Easy
     };
 
     var game = new GuessTheNumberGame(difficulty);
@@ -71,10 +72,10 @@ void PlayMemoryGame()
 
     var memDifficulty = memDiff switch
     {
-        "1" => GameZone.MemoryGame.Difficulty.Easy,
-        "2" => GameZone.MemoryGame.Difficulty.Medium,
-        "3" => GameZone.MemoryGame.Difficulty.Hard,
-        _ => GameZone.MemoryGame.Difficulty.Easy
+        "1" => Difficulty.Easy,
+        "2" => Difficulty.Medium,
+        "3" => Difficulty.Hard,
+        _ => Difficulty.Easy
     };
 
     var memoryGame = new MemoryGame(memDifficulty);

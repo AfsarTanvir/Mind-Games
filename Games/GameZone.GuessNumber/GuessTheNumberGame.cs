@@ -1,12 +1,16 @@
 ﻿namespace GameZone.GuessNumber;
+using GameZone.Core;
 
-public class GuessTheNumberGame
+public class GuessTheNumberGame : IGame
 {
     private readonly GameSettings _settings;
     private readonly int _secretNumber;
+    public string Name => "Guess the Number";
+    private readonly Difficulty _difficulty;
 
     public GuessTheNumberGame(Difficulty difficulty)
     {
+        _difficulty = difficulty;
         _settings = GameSettings.FromDifficulty(difficulty);
         var random = new Random();
         _secretNumber = random.Next(_settings.Min, _settings.Max + 1);
@@ -14,6 +18,8 @@ public class GuessTheNumberGame
 
     public void Start()
     {
+        Console.Clear();
+        Console.WriteLine($"🎯 Difficulty: {_difficulty}");
         Console.WriteLine($"Guess the number between {_settings.Min} and {_settings.Max}");
         int attempts = 0;
 

@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <ProjectReference Include="..\GameZone.Core\GameZone.Core.csproj" />
     <ProjectReference Include="..\GameZone.GuessNumber\GameZone.GuessNumber.csproj" />
     <ProjectReference Include="..\GameZone.MemoryGame\GameZone.MemoryGame.csproj" />
   </ItemGroup>

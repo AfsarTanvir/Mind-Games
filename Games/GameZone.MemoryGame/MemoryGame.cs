@@ -1,14 +1,18 @@
 ﻿namespace GameZone.MemoryGame;
+using GameZone.Core;
 
-public class MemoryGame
+public class MemoryGame : IGame
 {
-    private char[,] _board;
-    private bool[,] _revealed;
+    private char[,] _board = null!;
+    private bool[,] _revealed = null!;
     private readonly int _rows;
     private readonly int _cols;
+    public string Name => "Memory Game";
+    private readonly Difficulty _difficulty;
 
     public MemoryGame(Difficulty difficulty)
     {
+        _difficulty = difficulty;
         switch (difficulty)
         {
             case Difficulty.Easy:
@@ -19,6 +23,9 @@ public class MemoryGame
                 break;
             case Difficulty.Hard:
                 _rows = 4; _cols = 4;
+                break;
+            default:
+                _rows = 2; _cols = 2;
                 break;
         }
 

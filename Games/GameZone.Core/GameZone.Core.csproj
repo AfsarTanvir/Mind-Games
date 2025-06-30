@@ -6,8 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\GameZone.GuessNumber\GameZone.GuessNumber.csproj" />
-  </ItemGroup>
-
 </Project>

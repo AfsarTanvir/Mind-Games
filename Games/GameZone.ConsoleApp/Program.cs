@@ -1,4 +1,5 @@
 ﻿using GameZone.Core;
+using GameZone.DiceGame;
 using GameZone.GuessNumber;
 using GameZone.MemoryGame;
 
@@ -9,7 +10,7 @@ while (true)
     Console.WriteLine("Select a game:");
     Console.WriteLine("1. Guess the Number");
     Console.WriteLine("2. Memory Game");
-    Console.WriteLine("3. Dice Roll (Coming Soon)");
+    Console.WriteLine("3. Dice Roll");
     Console.WriteLine("0. Exit");
 
     Console.Write("Enter your choice: ");
@@ -26,8 +27,7 @@ while (true)
             break;
 
         case "3":
-            Console.WriteLine("🎲 Dice Roll Game is under development...");
-            Pause();
+            PlayDiceGame();
             break;
 
         case "0":
@@ -80,6 +80,18 @@ void PlayMemoryGame()
 
     var memoryGame = new MemoryGame(memDifficulty);
     memoryGame.Start();
+
+    Pause();
+}
+
+void PlayDiceGame()
+{
+    Console.WriteLine("Choose opponent:\n1. Player 2\n2. Computer");
+    var vsChoice = Console.ReadLine();
+    var isComputer = vsChoice == "2";
+
+    var diceGame = new DiceRaceGame(isComputer);
+    diceGame.Start();
 
     Pause();
 }

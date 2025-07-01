@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GameZone.Core\GameZone.Core.csproj" />
+    <ProjectReference Include="..\GameZone.DiceGame\GameZone.DiceGame.csproj" />
     <ProjectReference Include="..\GameZone.GuessNumber\GameZone.GuessNumber.csproj" />
     <ProjectReference Include="..\GameZone.MemoryGame\GameZone.MemoryGame.csproj" />
   </ItemGroup>

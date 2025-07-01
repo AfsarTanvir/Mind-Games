@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.36105.23 d17.13
+VisualStudioVersion = 17.13.36105.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameZone.Core", "GameZone.Core\GameZone.Core.csproj", "{4071D7FD-AB21-4728-8B5C-292C2682143B}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameZone.ConsoleApp", "GameZone.ConsoleApp\GameZone.ConsoleApp.csproj", "{79D25006-FC79-44AB-9DE9-CCD41B913EC6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameZone.MemoryGame", "GameZone.MemoryGame\GameZone.MemoryGame.csproj", "{81B4E455-BBAD-499F-999E-2CE47D1D3D60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameZone.DiceGame", "GameZone.DiceGame\GameZone.DiceGame.csproj", "{5E6A7AA8-21D7-4ECE-8FB6-E9B664558F66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{81B4E455-BBAD-499F-999E-2CE47D1D3D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81B4E455-BBAD-499F-999E-2CE47D1D3D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81B4E455-BBAD-499F-999E-2CE47D1D3D60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E6A7AA8-21D7-4ECE-8FB6-E9B664558F66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E6A7AA8-21D7-4ECE-8FB6-E9B664558F66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E6A7AA8-21D7-4ECE-8FB6-E9B664558F66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E6A7AA8-21D7-4ECE-8FB6-E9B664558F66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
